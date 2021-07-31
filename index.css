@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
+.full-div{
+    background-image: url('assets/images/bg.jpg');
+    display: flex;
+}
 body{
     background-color: rgb(212, 0, 0);
 }
 
+.sidenav{
+    width: 15%;
+    background-color: rgb(186, 239, 252);
+}
+.main{
+    width: 85%;
+}
 .page-head{
     font-family: 'Lora', serif;
     margin-left: 15px;

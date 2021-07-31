@@ -57,16 +57,18 @@ h3 {color: #444444;margin-bottom: 10px; margin-top: 30px; text-align: left; padd
 
 	
 	function onConnectionLost(){
-	console.log("connection lost");
-	document.getElementById("status").innerHTML = "Connection Lost";
-	document.getElementById("messages").innerHTML ="Connection Lost";
-	connected_flag=0;
+		console.log("connection lost");
+		document.getElementById("status").innerHTML = "Connection Lost";
+		document.getElementById("messages").innerHTML ="Connection Lost";
+		connected_flag=0;
 	}
+
 	function onFailure(message) {
 		console.log("Failed");
 		document.getElementById("messages").innerHTML = "Connection Failed- Retrying";
         setTimeout(MQTTconnect, reconnectTimeout);
-        }
+    }
+
 	function onMessageArrived(r_message){
 		out_msg="Message received "+r_message.payloadString+"<br>";
 		out_msg=out_msg+"Message received Topic "+r_message.destinationName;
@@ -76,7 +78,7 @@ h3 {color: #444444;margin-bottom: 10px; margin-top: 30px; text-align: left; padd
 		var topic=r_message.destinationName;
 		if(topic=="slt_agro21/mois")
 		{
-		document.getElementById("mois").innerHTML =r_message.payloadString;
+			document.getElementById("mois").innerHTML =r_message.payloadString;
 		}
 		if(topic=="slt_agro21/temp")
 		{
