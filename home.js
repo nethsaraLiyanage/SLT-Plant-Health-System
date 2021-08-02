@@ -144,7 +144,8 @@
             if(topic=="slt_agro21/mois")
             {
                 document.getElementById("mois").innerHTML =r_message.payloadString;
-                mois = pharseInt(r_message.payloadString);
+                mois = 60;
+                //pharseInt(r_message.payloadString);
                 // console.log("check", r_message.payloadString);
                 // Cicle Chart
                 Circles.create({
@@ -165,13 +166,14 @@
             if(topic=="slt_agro21/temp")
             {
                 document.getElementById("temp").innerHTML =r_message.payloadString;
-                temp = pharseInt(r_message.payloadString);
-                // console.log("check", r_message.payloadString);
+                temp = 80;
+                //pharseInt(r_message.payloadString);
+                // // console.log("check", r_message.payloadString);
                 // Cicle Chart
                 Circles.create({
-                    id:           'task-complete',
+                    id:           'task-complete2',
                     radius:       75,
-                    value:        mois,
+                    value:        temp,
                     maxValue:     100,
                     width:        7,
                     text:         function(value){return value + '%';},
@@ -186,11 +188,12 @@
             if(topic=="slt_agro21/hum")
             {
                 document.getElementById("hum").innerHTML =r_message.payloadString;
-                hum = pharseInt(r_message.payloadString);
-                // console.log("check", r_message.payloadString);
-                // Cicle Chart
+                hum = 50;
+                //pharseInt(r_message.payloadString);
+                // // console.log("check", r_message.payloadString);
+                // // Cicle Chart
                 Circles.create({
-                    id:           'task-complete',
+                    id:           'task-complete3',
                     radius:       75,
                     value:        hum,
                     maxValue:     100,
@@ -207,11 +210,12 @@
             if(topic=="slt_agro21/lux")
             {
                 document.getElementById("lux").innerHTML =r_message.payloadString;
-                lux = pharseInt(r_message.payloadString);
-                // console.log("check", r_message.payloadString);
-                // Cicle Chart
+                lux = 30;
+                //pharseInt(r_message.payloadString);
+                // // console.log("check", r_message.payloadString);
+                // // Cicle Chart
                 Circles.create({
-                    id:           'task-complete',
+                    id:           'task-complete4',
                     radius:       75,
                     value:        lux,
                     maxValue:     100,
@@ -229,11 +233,12 @@
             if(topic=="slt_agro21/Amois")
             {
                 document.getElementById("Amois").innerHTML =r_message.payloadString;
-                Amois = pharseInt(r_message.payloadString);
-                // console.log("check", r_message.payloadString);
-                // Cicle Chart
+                Amois = 70;
+                //pharseInt(r_message.payloadString);
+                // // console.log("check", r_message.payloadString);
+                // // Cicle Chart
                 Circles.create({
-                    id:           'task-complete',
+                    id:           'task-complete5',
                     radius:       75,
                     value:        Amois,
                     maxValue:     100,
@@ -250,11 +255,12 @@
             if(topic=="slt_agro21/Atemp")
             {
                 document.getElementById("Atemp").innerHTML =r_message.payloadString;
-                Atemp = pharseInt(r_message.payloadString);
-                // console.log("check", r_message.payloadString);
-                // Cicle Chart
+                Atemp = 10;
+                //pharseInt(r_message.payloadString);
+                // // console.log("check", r_message.payloadString);
+                // // Cicle Chart
                 Circles.create({
-                    id:           'task-complete',
+                    id:           'task-complete6',
                     radius:       75,
                     value:        Atemp,
                     maxValue:     100,
@@ -271,11 +277,12 @@
             if(topic=="slt_agro21/Ahum")
             {
                 document.getElementById("Ahum").innerHTML =r_message.payloadString;
-                Ahum = pharseInt(r_message.payloadString);
-                // console.log("check", r_message.payloadString);
-                // Cicle Chart
+                Ahum = 90;
+                //pharseInt(r_message.payloadString);
+                // // console.log("check", r_message.payloadString);
+                // // Cicle Chart
                 Circles.create({
-                    id:           'task-complete',
+                    id:           'task-complete7',
                     radius:       75,
                     value:        Ahum,
                     maxValue:     100,
@@ -292,11 +299,12 @@
             if(topic=="slt_agro21/Alux")
             {
                 document.getElementById("Alux").innerHTML =r_message.payloadString;
-                Alux = pharseInt(r_message.payloadString);
-                // console.log("check", r_message.payloadString);
-                // Cicle Chart
+                Alux = 55;
+                //pharseInt(r_message.payloadString);
+                // // console.log("check", r_message.payloadString);
+                // // Cicle Chart
                 Circles.create({
-                    id:           'task-complete',
+                    id:           'task-complete8',
                     radius:       75,
                     value:        Alux,
                     maxValue:     100,
